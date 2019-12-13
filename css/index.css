@@ -160,6 +160,29 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  border-bottom: 1px solid #F1F1F1;
+  background-color: #F6F6F6;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #23293B;
+}
+.navigation h1 {
+  padding: 14px;
+  font-size: 4rem;
+}
+.navigation nav {
+  align-content: space-between;
+}
+.navigation a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #454A59;
+  padding: 16px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -180,6 +203,20 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media ( max-width: 500px ) {
+  .home .space-images .blast {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
@@ -203,6 +240,15 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media ( max-width: 500px ) {
+  .home .walk {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -211,6 +257,25 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #22283A;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #F6F7F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: #F6F7F8;
+  color: #22283A;
+  border: 1px solid #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
